@@ -1,0 +1,36 @@
+.card {
+  width: 50vw;
+  color: #000411;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.1rem;
+  background-color: #fff;
+  padding: .7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px hsl(226, 100%, 3%);
+  transition: ease-in-out;
+  position: absolute;
+  top: 100px;
+  left: 20px;
+}
+
+.card footer {
+  margin-bottom: 20px;
+}
+
+.card button {
+  width: 500px;
+  font-family: "Philosopher", sans-serif;
+  font-size: 1.2rem;
+  height: 3rem;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #000411;
+  margin-bottom: 20px;
+  cursor: pointer;
+}

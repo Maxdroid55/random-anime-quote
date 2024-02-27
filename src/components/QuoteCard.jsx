@@ -1,7 +1,12 @@
 import { useState, useEffect } from "react"
+import './QuoteCard.css'
 
 export default function QuoteCard() {
-  const [quote, setQuote] = useState({})
+  const [quote, setQuote] = useState({
+    anime: "Naruto",
+    quote: "This world shall know pain",
+    character: "Pain"
+  })
   const [changeQuote, setChangeQuote] = useState(false)
 
   useEffect(() => {
@@ -20,12 +25,12 @@ export default function QuoteCard() {
       <div className="card">
         <blockquote>
           <p>{quote.quote}</p>
-          <footer> - {quote.character} <br />
+          <footer> - {quote.character} <br /><br />
             Anime: {quote.anime}
           </footer>
         </blockquote>
+        <button onClick={handleClick}>Generate New Quote</button>
       </div>
-      <button onClick={handleClick}>Generate New Quote</button>
     </>
   )
 }
